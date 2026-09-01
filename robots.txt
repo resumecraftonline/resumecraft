@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://resumecraftonline.github.io/resumecraft/sitemap.xml

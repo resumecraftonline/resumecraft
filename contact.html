@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | ResumeCraft</title>
+
+<meta name="description"
+    content="Contact ResumeCraft for questions, suggestions and website support.">
+
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="css/style.css">
+
+</head><body><header class="header">
+    <div class="container header-container">
+
+        <a href="index.html" class="logo">
+            Resume<span>Craft</span>
+        </a>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="templates.html">Templates</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="templates.html" class="header-button">
+            Create Resume
+        </a>
+
+    </div>
+</header>
+
+
+<main class="form-page">
+
+    <div class="container form-container">
+
+        <div class="page-heading">
+            <span>CONTACT US</span>
+            <h1>Get in Touch</h1>
+            <p>
+                Have questions or suggestions? We would love to hear from you.
+            </p>
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="contactName">Your Name</label>
+
+                    <input
+                        type="text"
+                        id="contactName"
+                        placeholder="Enter your name"
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="contactEmail">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="contactEmail"
+                        placeholder="Enter your email"
+                    >
+                </div>
+
+
+                <div class="form-group full-width">
+                    <label for="contactSubject">Subject</label>
+
+                    <input
+                        type="text"
+                        id="contactSubject"
+                        placeholder="Enter subject"
+                    >
+                </div>
+
+
+                <div class="form-group full-width">
+                    <label for="contactMessage">Message</label>
+
+                    <textarea
+                        id="contactMessage"
+                        rows="6"
+                        placeholder="Write your message"
+                    ></textarea>
+                </div>
+
+            </div>
+
+
+            <div class="form-actions">
+
+                <a href="index.html" class="back-button">
+                    Back to Home
+                </a>
+
+                <button
+                    type="button"
+                    class="next-button"
+                    id="sendMessage"
+                >
+                    Send Message
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <h2>Email Support</h2>
+
+            <p>
+                For support and general questions, you can contact us
+                through the form above.
+            </p>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div>
+            <div class="footer-logo">
+                Resume<span>Craft</span>
+            </div>
+
+            <p>Create professional resumes quickly and easily.</p>
+        </div>
+
+
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+        © 2026 ResumeCraft. All rights reserved.
+    </div>
+
+</footer>
+
+
+<script>
+
+    const sendButton = document.getElementById("sendMessage");
+
+    sendButton.addEventListener("click", function () {
+
+        const name = document.getElementById("contactName").value.trim();
+        const email = document.getElementById("contactEmail").value.trim();
+        const subject = document.getElementById("contactSubject").value.trim();
+        const message = document.getElementById("contactMessage").value.trim();
+
+        if (!name || !email || !subject || !message) {
+
+            alert("Please fill in all fields.");
+
+            return;
+        }
+
+        const mailSubject =
+            encodeURIComponent("ResumeCraft Contact: " + subject);
+
+        const mailBody =
+            encodeURIComponent(
+                "Name: " + name +
+                "\nEmail: " + email +
+                "\n\nMessage:\n" + message
+            );
+
+        window.location.href =
+            "mailto:YOUR_EMAIL@gmail.com?subject=" +
+            mailSubject +
+            "&body=" +
+            mailBody;
+
+    });
+
+</script>
+
+</body></html>

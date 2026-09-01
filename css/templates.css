@@ -1,0 +1,338 @@
+/* =========================
+   TEMPLATES PAGE
+========================= */
+
+.templates-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.template-card {
+    background: #ffffff;
+    border: 2px solid #e5e7eb;
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.template-card.selected {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================
+   TEMPLATE PREVIEW
+========================= */
+
+.template-preview {
+    height: 300px;
+    padding: 25px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+
+/* COMMON FAKE ELEMENTS */
+
+.fake-header {
+    width: 100%;
+    height: 45px;
+    background: #1e293b;
+    margin-bottom: 20px;
+}
+
+.fake-title {
+    width: 95px;
+    height: 10px;
+    background: #1e293b;
+    margin: 15px 0 12px;
+}
+
+.fake-line {
+    width: 100%;
+    height: 7px;
+    background: #e2e8f0;
+    margin-bottom: 8px;
+    border-radius: 3px;
+}
+
+.fake-line.short {
+    width: 65%;
+}
+
+.fake-white-title {
+    width: 110px;
+    height: 12px;
+    background: #ffffff;
+    margin-bottom: 12px;
+}
+
+.fake-white-line {
+    width: 75%;
+    height: 7px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.fake-blue-title {
+    width: 100px;
+    height: 9px;
+    background: #2563eb;
+    margin: 18px 0 10px;
+}
+
+.fake-dark-title {
+    width: 100px;
+    height: 9px;
+    background: #111827;
+    margin: 18px 0 10px;
+}
+
+
+/* =========================
+   CLASSIC
+========================= */
+
+.classic-preview {
+    border-top: 8px solid #1e293b;
+}
+
+
+/* =========================
+   MODERN
+========================= */
+
+.modern-preview {
+    padding: 0;
+}
+
+.modern-header {
+    background: #2563eb;
+    padding: 25px;
+    height: 90px;
+}
+
+.template-content {
+    padding: 20px;
+}
+
+
+/* =========================
+   MINIMAL
+========================= */
+
+.minimal-preview {
+    text-align: center;
+}
+
+.minimal-name {
+    width: 150px;
+    height: 14px;
+    background: #111827;
+    margin: 25px auto 10px;
+}
+
+.minimal-subtitle {
+    width: 100px;
+    height: 7px;
+    background: #94a3b8;
+    margin: auto auto 30px;
+}
+
+.fake-title.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================
+   EXECUTIVE
+========================= */
+
+.executive-preview {
+    padding: 0;
+}
+
+.executive-header {
+    height: 100px;
+    background: #111827;
+    padding: 28px;
+}
+
+
+/* =========================
+   CREATIVE
+========================= */
+
+.creative-preview {
+    padding: 0;
+    display: flex;
+}
+
+.creative-sidebar {
+    width: 35%;
+    background: #2563eb;
+    padding: 20px 10px;
+}
+
+.creative-photo {
+    width: 55px;
+    height: 55px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: auto auto 20px;
+}
+
+.creative-line {
+    height: 7px;
+    background: rgba(255, 255, 255, 0.65);
+    margin-bottom: 8px;
+}
+
+.creative-line.short {
+    width: 70%;
+}
+
+.creative-main {
+    width: 65%;
+    padding: 18px;
+}
+
+
+/* =========================
+   ATS
+========================= */
+
+.ats-preview {
+    font-family: Arial, sans-serif;
+    padding: 22px;
+}
+
+.ats-name {
+    width: 140px;
+    height: 13px;
+    background: #111827;
+    margin-bottom: 10px;
+}
+
+.ats-contact {
+    width: 100%;
+    height: 6px;
+    background: #cbd5e1;
+    margin-bottom: 22px;
+}
+
+.ats-heading {
+    font-size: 8px;
+    font-weight: 800;
+    border-bottom: 2px solid #111827;
+    padding-bottom: 5px;
+    margin: 16px 0 10px;
+}
+
+
+/* =========================
+   TEMPLATE INFO
+========================= */
+
+.template-info {
+    padding: 18px;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.template-info h3 {
+    color: #0f172a;
+    font-size: 18px;
+}
+
+.template-info p {
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.select-template {
+    border: none;
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 9px 14px;
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+.template-card.selected .select-template {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+
+/* =========================
+   CONTINUE
+========================= */
+
+.continue-area {
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+.continue-area p {
+    color: #64748b;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.continue-button {
+    border: none;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 14px 35px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.continue-button:disabled {
+    background: #cbd5e1;
+    cursor: not-allowed;
+}
+
+.continue-button:not(:disabled):hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .templates-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .templates-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .template-preview {
+        height: 280px;
+    }
+
+}

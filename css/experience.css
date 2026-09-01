@@ -1,0 +1,59 @@
+/* =========================
+   EXPERIENCE PAGE
+========================= */
+
+.experience-card {
+    position: relative;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.entry-header h2 {
+    font-size: 20px;
+    color: #0f172a;
+}
+
+.remove-entry {
+    border: none;
+    background: #fee2e2;
+    color: #dc2626;
+    padding: 8px 13px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.remove-entry:hover {
+    background: #fecaca;
+}
+
+
+/* =========================
+   SKIP MESSAGE
+========================= */
+
+.skip-message {
+    margin-top: 20px;
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    color: #92400e;
+    padding: 13px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.jobDescription {
+    min-height: 120px;
+}

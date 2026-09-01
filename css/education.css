@@ -1,0 +1,57 @@
+/* =========================
+   EDUCATION PAGE
+========================= */
+
+.education-card {
+    position: relative;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.entry-header h2 {
+    font-size: 20px;
+    color: #0f172a;
+}
+
+.remove-entry {
+    border: none;
+    background: #fee2e2;
+    color: #dc2626;
+    padding: 8px 13px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.remove-entry:hover {
+    background: #fecaca;
+}
+
+
+/* =========================
+   EMPTY EDUCATION
+========================= */
+
+#educationList:empty {
+    display: none;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 550px) {
+
+    .entry-header {
+        gap: 15px;
+    }
+
+}

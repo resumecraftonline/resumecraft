@@ -1,0 +1,76 @@
+/* =========================
+   PERSONAL DETAILS
+========================= */
+
+.photo-section {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.photo-preview {
+    width: 110px;
+    height: 110px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #eff6ff;
+    border: 2px dashed #93c5fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.photo-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#profilePhoto {
+    display: none;
+}
+
+.upload-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 11px 17px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-label:hover {
+    background: #1d4ed8;
+}
+
+.small-text {
+    color: #94a3b8;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 550px) {
+
+    .photo-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}

@@ -818,3 +818,47 @@ textarea {
     }
 
 }
+
+/* ================================
+   ADSENSE AD SPACE
+================================ */
+
+.ad-container {
+    width: 100%;
+    max-width: 728px;
+    min-height: 90px;
+    margin: 30px auto;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+
+    color: #777;
+    font-size: 12px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.ad-container span {
+    opacity: 0.7;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .ad-container {
+        min-height: 100px;
+        margin: 25px auto;
+        padding: 12px;
+    }
+
+}

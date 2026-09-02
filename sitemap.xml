@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://resumecraftonline.github.io/resumecraft/</loc>
-  </url>
-  <url>
-    <loc>https://resumecraftonline.github.io/resumecraft/templates.html</loc>
-  </url>
-  <url>
-    <loc>https://resumecraftonline.github.io/resumecraft/about.html</loc>
-  </url>
-  <url>
-    <loc>https://resumecraftonline.github.io/resumecraft/privacy.html</loc>
-  </url>
-  <url>
-    <loc>https://resumecraftonline.github.io/resumecraft/terms.html</loc>
-  </url>
-  <url>
-    <loc>https://resumecraftonline.github.io/resumecraft/contact.html</loc>
-  </url>
+
+    <url>
+        <loc>https://resumecraftonline.github.io/resumecraft/</loc>
+    </url>
+
+    <url>
+        <loc>https://resumecraftonline.github.io/resumecraft/templates.html</loc>
+    </url>
+
+    <url>
+        <loc>https://resumecraftonline.github.io/resumecraft/about.html</loc>
+    </url>
+
+    <url>
+        <loc>https://resumecraftonline.github.io/resumecraft/privacy.html</loc>
+    </url>
+
+    <url>
+        <loc>https://resumecraftonline.github.io/resumecraft/terms.html</loc>
+    </url>
+
+    <url>
+        <loc>https://resumecraftonline.github.io/resumecraft/contact.html</loc>
+    </url>
+
 </urlset>
